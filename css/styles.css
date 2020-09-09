@@ -878,6 +878,7 @@ address {
   color: var(--secondary-text-color);
 }
 .modal-form-check:checked + .modal-form-label-check::before {
+  border-color: var(--accent-color);
   background-image: url(../images/svg/icon-check.svg);
   background-size: contain;
   background-origin: border-box;
