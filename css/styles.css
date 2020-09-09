@@ -870,13 +870,6 @@ address {
 
   color: var(--secondary-text-color);
 }
-.confirmation {
-  font-size: 14px;
-  line-height: 1.714;
-  letter-spacing: 0.03em;
-
-  color: var(--secondary-text-color);
-}
 .modal-form-check:checked + .modal-form-label-check::before {
   border-color: var(--accent-color);
   background-image: url(../images/svg/icon-check.svg);
@@ -899,6 +892,18 @@ address {
   
   border: 1px solid var(--primary-text-color);
   border-radius: 2px;
+}
+.modal-form-check:checked ~ .modal-form-label-check {
+  transform: translateX(15px);
+}
+.confirmation {
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  
+  transition: transform 250ms linear;
+
+  color: var(--secondary-text-color);
 }
 .confirmation-agreement {
   text-decoration: underline;
