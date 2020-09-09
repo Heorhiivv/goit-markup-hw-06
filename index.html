@@ -408,6 +408,19 @@
           </li>
           </ul>
         </div>
+
+        <div class="third-footer-column">
+          <p>Подпишитесь на рассылку</p>
+          <form action="#" class="footer-form-subscription">
+              <input type="email" name="subscription" class="subscription-input" id="footer-email" placeholder="E-mail">
+            <button type="submit" class="subscription-button">Подписаться
+              <svg width="24px" height="24px" class="form-subscription-icon">
+                <use href="./images/svg/sprite.svg#send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+
       </div>
     </div>
   </footer>
@@ -434,6 +447,7 @@
          <use href="./images/svg/icons.svg#icon-person"></use>
        </svg>
       </div>
+
        <label for="user-phone" class="modal-form-items-title">Телефон</label>
        <div class="modal-form-field">
        <input type="tel" name="user-phone" id="user-phone" class="modal-form-input">
@@ -455,11 +469,13 @@
        <textarea name="user-comment" id="user-comment" class="modal-form-comment" placeholder="Введите текст"></textarea>
      </div>
      
-       <input type="checkbox" name="user-policy" id="user-policy" class="modal-form-policy visually-hidden">
-       <label for="user-policy" class="user-check">
-         Соглашаюсь с рассылкой и принимаю <a href="#" class="link">Условия договора</a>
-       </label>
-     
+      <div class="modal-checkbox-container">  
+      <input type="checkbox" class="contact-form-input visually-hidden" name="checkbox"
+      id="checkbox" value="agree">
+      <label for="checkbox" class="confirmation">Соглашаюсь с рассылкой и принимаю
+      <a href="" class="confirmation-agreement">Условия договора</a></label>
+    </div>
+  
      </form>
       <button type="button" class="button-primary">Отправить</button>
     </div>
