@@ -870,41 +870,6 @@ address {
 
   color: var(--secondary-text-color);
 }
-.modal-checkbox-container {
-  display: flex;
-  align-items: center;
-  margin-bottom: 30px;
-}
-.modal-checkbox::before {
-
-  width: 16px;
-  height: 15px;
-
-  background-image: url(./images/svg/vector.svg#icon-Vector);
-  border: 1px solid var(--primary-text-color);
-  border-radius: 2px;
-
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.modal-checkbox-label {
-  margin-left: 7px;
-  font-size: 14px;
-  line-height: 1.714;
-  letter-spacing: 0.03em;
-
-  color: var(--secondary-text-color);
-}
-/* .confirmation::before {
-  position: absolute;
-  content: "";
-  display: block;
-
-  width: 16px;
-  height: 15px;
-  
-  background: url(../images/svg/vector.svg#check);
-  margin-right: 7px;
-}
 .confirmation {
   font-size: 14px;
   line-height: 1.714;
@@ -912,12 +877,26 @@ address {
 
   color: var(--secondary-text-color);
 }
-.contact-form-input:checked+.confirmation::before {
-  background-image: url(../images/svg/checkbox.svg#yes);
+.modal-form-check:checked + .modal-form-label-check::before {
+  background-image: url(../images/svg/icon-check.svg);
 }
-.contact-form-input:checked+.confirmation .confirmation-title {
-  color: var(--accent-color);
-} */
+.modal-form-label-check {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.modal-form-label-check::before {
+  content: "";
+  display: block;
+  cursor: pointer;
+  
+  width: 16px;
+  height: 15px;
+  margin-right: 7px;
+  
+  border: 1px solid var(--primary-text-color);
+  border-radius: 2px;
+}
 .confirmation-agreement {
   text-decoration: underline;
   color: var(--accent-color);
