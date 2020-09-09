@@ -424,7 +424,7 @@
       </div>
     </div>
   </footer>
-
+ 
   <div class="backdrop is-hidden" data-modal>
     <div class="modal-window-cover">
       <div class="modal">
@@ -433,7 +433,7 @@
         <use href="./images/svg/icons.svg#icon-Vector">
         </use>
       </svg>
-    </button>
+      </button>
       <h2 class="title">
         Оставьте свои данные, мы вам перезвоним
       </h2>
@@ -468,16 +468,18 @@
        <div class="modal-form-massage">
        <textarea name="user-comment" id="user-comment" class="modal-form-comment" placeholder="Введите текст"></textarea>
      </div>
-     
-      <div class="modal-checkbox-container">  
-      <input type="checkbox" class="contact-form-input visually-hidden" name="checkbox"
-      id="checkbox" value="agree">
-      <label for="checkbox" class="confirmation">Соглашаюсь с рассылкой и принимаю
-      <a href="" class="confirmation-agreement">Условия договора</a></label>
+
+     <div class="modal-checkbox-container">  
+      <input type="checkbox" class="modal-checkbox hidden" id="modal-checkbox" value="agree">
+        
+      <label for="modal-checkbox" class="modal-checkbox-label">Соглашаюсь с рассылкой и принимаю <a href="confirmation-agreement"> Условия договора</a>
+      </label>
     </div>
-  
-     </form>
-      <button type="button" class="button-primary">Отправить</button>
+     
+     <div class="access-button">
+     <button type="button" class="button-primary">Отправить</button>
+    </div>
+    </form>
     </div>
   </div>
 </div>
