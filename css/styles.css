@@ -879,6 +879,8 @@ address {
 }
 .modal-form-check:checked + .modal-form-label-check::before {
   background-image: url(../images/svg/icon-check.svg);
+  background-size: contain;
+  background-origin: border-box;
 }
 .modal-form-label-check {
   display: flex;
