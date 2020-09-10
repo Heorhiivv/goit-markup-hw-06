@@ -900,9 +900,7 @@ address {
   border: 1px solid var(--primary-text-color);
   border-radius: 2px;
 }
-.modal-form-check:checked ~ .modal-form-label-check {
-  transform: translateX(15px);
-}
+
 .confirmation {
   font-size: 14px;
   line-height: 1.714;
